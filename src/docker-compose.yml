@@ -1,0 +1,9 @@
+version: '3.8'
+services: 
+  image: node: nebo15/alpine-node
+  volumes: - ./:/app
+  working_dir: /app
+  ports: -3000:3000
+  command: npm start 
+  tty: true
+  
